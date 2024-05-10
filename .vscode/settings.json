@@ -1,0 +1,26 @@
+{
+	"files.associations": {
+		"ft_string.h": "c",
+		"ft_char.h": "c",
+		"ft_error.h": "c",
+		"ft_linked_list.h": "c",
+		"libft.h": "c",
+		"ft_memory.h": "c",
+		"ft_put.h": "c",
+		"__bit_reference": "c",
+		"algorithm": "c",
+		"bitset": "c",
+		"chrono": "c",
+		"unordered_map": "c",
+		"sstream": "c",
+		"functional": "c",
+		"iterator": "c",
+		"memory": "c",
+		"stdlib.h": "c",
+		"ft_bitmap.h": "c",
+		"ft_printf.h": "c",
+		"ft_parser.h": "c",
+		"stdio.h": "c",
+		"ft_btree.h": "c"
+	}
+}
