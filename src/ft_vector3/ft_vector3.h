@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 11:30:28 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/14 13:15:16 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/14 18:14:49 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,9 @@ void			ft_v3_inmult(t_vector3 *v1, double coef);
 void			ft_v3_indiv(t_vector3 *v1, double coef);
 
 void			print_v3(char *prefix, t_vector3	*v, int format);
+
+t_vector3		*ft_v3_zero(void);
+t_vector3		*ft_v3_new(double x, double y, double z);
+t_vector3		*ft_v3_cpy(t_vector3 *v);
 
 #endif

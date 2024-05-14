@@ -152,7 +152,8 @@ FT_QUEUE_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_QUEUE_SRCS}}
 FT_VECTOR3_SRCS =	ft_dot_product.c		\
 					ft_v3_op.c				\
 					ft_v3_inop.c			\
-					ft_v3_misc.c
+					ft_v3_misc.c			\
+					ft_v3_new.c
 FT_VECTOR3_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_VECTOR3_SRCS}}
 
 SRCS =	${FT_CHAR_SRCS}						\
