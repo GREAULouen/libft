@@ -147,6 +147,8 @@ FT_QUEUE_SRCS =	ft_create_queue.c			\
 				ft_print_queue.c
 FT_QUEUE_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_QUEUE_SRCS}}
 
+FT_VECTOR3_SRCS =	ft_dot_product.c
+FT_VECTOR3_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_VECTOR3_SRCS}}
 
 SRCS =	${FT_CHAR_SRCS}						\
 		${FT_STRING_SRCS}					\
@@ -159,7 +161,8 @@ SRCS =	${FT_CHAR_SRCS}						\
 		${FT_ERROR_SRCS}					\
 		${FT_BITMAP_SRCS}					\
 		${FT_BTREE_SRCS}					\
-		${FT_QUEUE_SRCS}
+		${FT_QUEUE_SRCS}					\
+		${FT_VECTOR3_SRCS}
 OBJS = ${addprefix ${OBJ_DIR}/, ${notdir ${SRCS:.c=.o}}}
 TOTAL_OBJS := $(words ${OBJS})
 
@@ -283,6 +286,9 @@ ${FT_BTREE_OBJS}: ${OBJ_DIR}/%.o: ${SRC_DIR}/ft_btree/%.c | ${OBJ_DIR}
 	@${compile_with_progress_bar}
 
 ${FT_QUEUE_OBJS}: ${OBJ_DIR}/%.o: ${SRC_DIR}/ft_queue/%.c | ${OBJ_DIR}
+	@${compile_with_progress_bar}
+
+${FT_VECTOR3_OBJS}: ${OBJ_DIR}/%.o: ${SRC_DIR}/ft_vector3/%.c | ${OBJ_DIR}
 	@${compile_with_progress_bar}
 
 move_objs:
