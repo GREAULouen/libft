@@ -147,7 +147,10 @@ FT_QUEUE_SRCS =	ft_create_queue.c			\
 				ft_print_queue.c
 FT_QUEUE_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_QUEUE_SRCS}}
 
-FT_VECTOR3_SRCS =	ft_dot_product.c
+FT_VECTOR3_SRCS =	ft_dot_product.c		\
+					ft_v3_op.c				\
+					ft_v3_inop.c			\
+					ft_v3_misc.c
 FT_VECTOR3_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_VECTOR3_SRCS}}
 
 SRCS =	${FT_CHAR_SRCS}						\
