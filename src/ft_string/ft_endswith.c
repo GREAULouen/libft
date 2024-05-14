@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 14:51:31 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/14 14:55:09 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/14 15:13:57 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int	ft_endswith(char *src, char *seq)
 	start = ft_strrchr(src, seq[0]);
 	if (!start || ft_strlen(start) != ft_strlen(seq))
 		return (0);
-	return (ft_strncmp(start, seq, ft_strlen(seq)));
+	return (ft_strncmp(start, seq, ft_strlen(seq)) == 0);
 }
