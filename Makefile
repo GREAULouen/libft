@@ -88,7 +88,8 @@ FT_CONVERSION_SRCS =	ft_itoa.c					\
 						ft_htoa.c					\
 						ft_lhtoa.c					\
 						ft_atoi.c					\
-						ft_btoi.c
+						ft_btoi.c					\
+						ft_atod.c
 FT_CONVERSION_OBJS = ${patsubst %.c, ${OBJ_DIR}/%.o, ${FT_CONVERSION_SRCS}}
 
 FT_PUT_SRCS =	ft_putchar.c				\

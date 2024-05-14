@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:05:40 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/14 16:18:50 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/14 17:54:03 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ char	*ft_lhtoa(size_t n);
 
 int		ft_atoi(const char *str);
 int		ft_btoi(char *n, char *base);
+
+double	ft_atod(char *arg);
 
 #endif
