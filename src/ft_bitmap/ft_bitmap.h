@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bitmap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klamprak <klamprak@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/14 09:43:01 by lgreau            #+#    #+#             */
-/*   Updated: 2024/04/29 10:38:37 by klamprak         ###   ########.fr       */
+/*   Updated: 2024/05/14 15:39:05 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
 // uint32_t: for MAC
 typedef struct s_bitmap
 {
-	u_int32_t	bits;
+	uint32_t	bits;
 }			t_bitmap;
 
-u_int32_t	ft_mask(int len, ...);
+uint32_t	ft_mask(int len, ...);
 
 #endif
