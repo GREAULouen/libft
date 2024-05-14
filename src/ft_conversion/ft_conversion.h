@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:05:40 by lgreau            #+#    #+#             */
-/*   Updated: 2024/04/18 09:43:08 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/14 16:18:50 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 
 # include <stdlib.h> // NULL, malloc
 # include <limits.h> // INT_MAX, INT_MIN
+
+# define BASE10_STR "0123456789"
+# define BASE16UP_STR "0123456789ABCDEF"
+# define BASE16LOW_STR "0123456789abcdef"
 
 char	*ft_itoa(int n);
 char	*ft_utoa(unsigned int n);
