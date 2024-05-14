@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 07:31:47 by lgreau            #+#    #+#             */
-/*   Updated: 2024/04/30 13:27:08 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/14 14:55:20 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,7 @@ char	**ft_fctsplit(char *str, int (*cmp)(int));
 
 char	*ft_ltruncate(char *str, size_t len);
 char	*ft_rtruncate(char *str, size_t len);
+
+int		ft_endswith(char *src, char *seq);
 
 #endif
