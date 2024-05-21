@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 11:30:28 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/16 14:09:21 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/21 12:19:19 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void			print_v3(char *prefix, t_vector3	*v, int format);
 t_vector3		*ft_v3_zero(void);
 t_vector3		*ft_v3_new(double x, double y, double z);
 t_vector3		*ft_v3_cpy(t_vector3 *v);
+t_vector3		*ft_v3_dir(t_vector3 *v1, t_vector3 *v2);
 
 void			ft_inrotate_x(t_vector3 *v, double theta);
 void			ft_inrotate_y(t_vector3 *v, double theta);
