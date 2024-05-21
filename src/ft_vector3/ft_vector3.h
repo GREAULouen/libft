@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 11:30:28 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/14 18:14:49 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/16 14:09:21 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "../ft_error/ft_error.h"
 # include <stdlib.h> // malloc
+# include <math.h>	// cos, sin
 
 # define DEFAULT 0
 # define ONELINE 1
@@ -43,5 +44,9 @@ void			print_v3(char *prefix, t_vector3	*v, int format);
 t_vector3		*ft_v3_zero(void);
 t_vector3		*ft_v3_new(double x, double y, double z);
 t_vector3		*ft_v3_cpy(t_vector3 *v);
+
+void			ft_inrotate_x(t_vector3 *v, double theta);
+void			ft_inrotate_y(t_vector3 *v, double theta);
+void			ft_inrotate_z(t_vector3 *v, double theta);
 
 #endif
