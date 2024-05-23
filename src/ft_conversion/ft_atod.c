@@ -6,7 +6,7 @@
 /*   By: lgreau <lgreau@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:42:02 by lgreau            #+#    #+#             */
-/*   Updated: 2024/05/14 17:55:34 by lgreau           ###   ########.fr       */
+/*   Updated: 2024/05/23 17:33:58 by lgreau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ double	ft_atod(char *arg)
 		return (-1 * ft_atod(&arg[1]));
 	index = -1;
 	dot_place = -1;
+	res = 0;
 	while (arg[++index])
 	{
 		if (arg[index] == '.')
